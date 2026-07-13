@@ -35,12 +35,6 @@
 
 ---
 
-### 💡 About
-
-Building things that matter. Passionate about clean code, great UX, and turning ideas into reality.
-
----
-
 ### 🛠️ Tech Stack
 
 <p align="center">
@@ -64,22 +58,21 @@ Building things that matter. Passionate about clean code, great UX, and turning 
 
 ---
 
-### 🧠 Currently
-
-<p align="center">
-  <img src="https://img.shields.io/badge/-Learning-ff6b6b?style=flat-square" />
-  <img src="https://img.shields.io/badge/-Building-4ecdc4?style=flat-square" />
-  <img src="https://img.shields.io/badge/-Growing-45b7d1?style=flat-square" />
-</p>
-
----
-
 <p align="center">
   <a href="https://github.com/j0nsss">
     <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a href="https://linkedin.com/in/jonaswilliams">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/j0nsss">
+    <img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/j0nsss">
+    <img src="https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://youtube.com/@j0nsss">
+    <img src="https://img.shields.io/badge/-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
   <a href="mailto:jonas@example.com">
     <img src="https://img.shields.io/badge/-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
