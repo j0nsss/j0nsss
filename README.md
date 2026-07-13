@@ -58,10 +58,8 @@ Building things that matter. Passionate about clean code, great UX, and turning 
 
 ---
 
-### 📈 GitHub Stats
-
 <p align="center">
-  <img src="stats.svg" width="400">
+  <img src="dino.svg" width="400">
 </p>
 
 ---

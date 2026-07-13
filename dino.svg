@@ -1,0 +1,69 @@
+<svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="160" fill="#f7f7f7" rx="8"/>
+
+  <!-- Ground -->
+  <rect x="0" y="135" width="400" height="3" fill="#535353"/>
+
+  <!-- Dino body -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0;0,-2;0,0" dur="0.3s" repeatCount="indefinite"/>
+    <!-- Body -->
+    <rect x="60" y="100" width="30" height="30" rx="3" fill="#535353"/>
+    <!-- Head -->
+    <rect x="85" y="90" width="20" height="18" rx="3" fill="#535353"/>
+    <!-- Eye -->
+    <circle cx="100" cy="96" r="2" fill="white"/>
+    <!-- Mouth -->
+    <rect x="100" y="102" width="5" height="2" fill="#535353"/>
+    <!-- Tail -->
+    <polygon points="60,115 45,110 45,120" fill="#535353"/>
+    <!-- Arms -->
+    <rect x="80" y="115" width="4" height="12" rx="1" fill="#535353"/>
+    <!-- Back leg -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0,65,130;15,65,130;0,65,130;-15,65,130;0,65,130" dur="0.3s" repeatCount="indefinite"/>
+      <rect x="60" y="127" width="6" height="10" rx="2" fill="#535353"/>
+    </g>
+    <!-- Front leg -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0,80,130;-15,80,130;0,80,130;15,80,130;0,80,130" dur="0.3s" repeatCount="indefinite"/>
+      <rect x="78" y="127" width="6" height="10" rx="2" fill="#535353"/>
+    </g>
+  </g>
+
+  <!-- Cactus 1 -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="400,0" to="-40,0" dur="2.5s" repeatCount="indefinite"/>
+    <rect x="0" y="117" width="8" height="18" rx="2" fill="#535353"/>
+    <rect x="-4" y="112" width="5" height="8" rx="2" fill="#535353"/>
+    <rect x="7" y="113" width="5" height="7" rx="2" fill="#535353"/>
+  </g>
+
+  <!-- Cactus 2 -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="500,0" to="-40,0" dur="3.5s" repeatCount="indefinite"/>
+    <rect x="0" y="112" width="6" height="23" rx="2" fill="#535353"/>
+  </g>
+
+  <!-- Cloud -->
+  <g opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" from="400,0" to="-80,0" dur="6s" repeatCount="indefinite"/>
+    <circle cx="30" cy="30" r="10" fill="#d4d4d4"/>
+    <circle cx="45" cy="25" r="14" fill="#d4d4d4"/>
+    <circle cx="60" cy="30" r="10" fill="#d4d4d4"/>
+  </g>
+
+  <!-- Score -->
+  <text x="370" y="20" fill="#535353" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">
+    <tspan>
+      00
+      <animate attributeName="textContent" values="00;01;02;03;04;05;06;07;08;09" dur="0.5s" repeatCount="indefinite" fill="freeze"/>
+    </tspan>
+  </text>
+
+  <!-- Game over text (blinking) -->
+  <text x="200" y="155" text-anchor="middle" fill="#535353" font-family="monospace" font-size="8">
+    🦖
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+</svg>
