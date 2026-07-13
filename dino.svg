@@ -1,4 +1,10 @@
 <svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&amp;display=swap');
+    .futuristic { font-family: 'Orbitron', 'Audiowide', 'Share Tech Mono', monospace; }
+    .sub { font-family: 'Rajdhani', 'Arial', sans-serif; }
+  </style>
   <rect width="400" height="160" fill="#0f0f23" rx="8"/>
 
   <defs>
@@ -48,31 +54,31 @@
   <!-- Main text "jonad" letter by letter -->
   <g filter="url(#glow)">
     <!-- j -->
-    <text x="68" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle">
+    <text x="68" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" class="futuristic">
       j
       <animate attributeName="y" values="60;85" dur="0.6s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze"/>
     </text>
     <!-- o -->
-    <text x="130" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+    <text x="130" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       o
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.15s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.15s" fill="freeze"/>
     </text>
     <!-- n -->
-    <text x="192" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+    <text x="192" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       n
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.3s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.3s" fill="freeze"/>
     </text>
     <!-- a -->
-    <text x="254" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+    <text x="254" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       a
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.45s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.45s" fill="freeze"/>
     </text>
     <!-- d -->
-    <text x="316" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+    <text x="316" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       d
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.6s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.6s" fill="freeze"/>
@@ -85,13 +91,13 @@
   </rect>
 
   <!-- Subtitle -->
-  <text x="200" y="125" text-anchor="middle" fill="#8888aa" font-family="monospace" font-size="11" opacity="0" letter-spacing="3">
+  <text x="200" y="125" text-anchor="middle" fill="#8888aa" font-size="11" opacity="0" letter-spacing="4" class="sub">
     build . ship . repeat
     <animate attributeName="opacity" from="0" to="0.7" dur="0.8s" begin="1.5s" fill="freeze"/>
   </text>
 
   <!-- Cursor blink -->
-  <text x="330" y="82" fill="#4d96ff" font-family="monospace" font-size="36" font-weight="bold">
+  <text x="330" y="82" fill="#4d96ff" font-size="36" font-weight="bold" class="futuristic">
     _
     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
   </text>
