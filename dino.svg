@@ -1,8 +1,7 @@
 <svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&amp;display=swap');
-    .futuristic { font-family: 'Orbitron', 'Audiowide', 'Share Tech Mono', monospace; }
+    .futuristic { font-family: 'Weghorst', 'Impact', 'Arial Black', sans-serif; font-weight: 900; }
     .sub { font-family: 'Rajdhani', 'Arial', sans-serif; }
   </style>
   <rect width="400" height="160" fill="#0f0f23" rx="8"/>
