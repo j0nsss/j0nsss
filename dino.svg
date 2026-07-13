@@ -1,109 +1,100 @@
-<svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&amp;display=swap');
     .futuristic { font-family: 'Weghorst', 'Impact', 'Arial Black', sans-serif; font-weight: 900; }
     .sub { font-family: 'Rajdhani', 'Arial', sans-serif; }
   </style>
-  <rect width="400" height="160" fill="#0f0f23" rx="8"/>
 
   <defs>
     <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff6b6b">
-        <animate attributeName="stop-color" values="#ff6b6b;#ffd93d;#6bcb77;#4d96ff;#ff6b6b" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#4d96ff">
-        <animate attributeName="stop-color" values="#4d96ff;#ff6b6b;#ffd93d;#6bcb77;#4d96ff" dur="4s" repeatCount="indefinite"/>
-      </stop>
+      <stop offset="0%" stop-color="#ff0000"/>
+      <stop offset="50%" stop-color="#cc0000"/>
+      <stop offset="100%" stop-color="#ff3333"/>
     </linearGradient>
-    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffd93d"/>
-      <stop offset="100%" stop-color="#ff6b6b"/>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0000"/>
+      <stop offset="100%" stop-color="#990000"/>
     </linearGradient>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
 
-  <!-- Background particles -->
-  <circle cx="50" cy="30" r="2" fill="#4d96ff" opacity="0.6">
+  <!-- Red particles -->
+  <circle cx="80" cy="30" r="2" fill="#ff0000" opacity="0.4">
     <animate attributeName="cy" values="30;140;30" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.6;0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="4s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="120" cy="50" r="1.5" fill="#ff6b6b" opacity="0.5">
+  <circle cx="180" cy="50" r="1.5" fill="#cc0000" opacity="0.3">
     <animate attributeName="cy" values="50;140;50" dur="3.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.5;0" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.3;0" dur="3.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="200" cy="20" r="2" fill="#6bcb77" opacity="0.4">
+  <circle cx="300" cy="20" r="2" fill="#ff3333" opacity="0.35">
     <animate attributeName="cy" values="20;140;20" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.4;0" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.35;0" dur="5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="300" cy="60" r="1.5" fill="#ffd93d" opacity="0.5">
+  <circle cx="450" cy="60" r="1.5" fill="#ff0000" opacity="0.4">
     <animate attributeName="cy" values="60;140;60" dur="4.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.5;0" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="4.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="350" cy="40" r="1" fill="#4d96ff" opacity="0.3">
+  <circle cx="530" cy="40" r="1" fill="#cc0000" opacity="0.3">
     <animate attributeName="cy" values="40;140;40" dur="3s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.3;0" dur="3s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Main text "jonad" letter by letter -->
   <g filter="url(#glow)">
-    <!-- j -->
-    <text x="68" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" class="futuristic">
+    <text x="100" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" class="futuristic">
       j
       <animate attributeName="y" values="60;85" dur="0.6s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze"/>
     </text>
-    <!-- o -->
-    <text x="130" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
+    <text x="185" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       o
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.15s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.15s" fill="freeze"/>
     </text>
-    <!-- n -->
-    <text x="192" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
+    <text x="270" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       n
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.3s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.3s" fill="freeze"/>
     </text>
-    <!-- a -->
-    <text x="254" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
+    <text x="355" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       a
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.45s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.45s" fill="freeze"/>
     </text>
-    <!-- d -->
-    <text x="316" y="85" fill="url(#g1)" font-size="48" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
+    <text x="440" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" opacity="0" class="futuristic">
       d
       <animate attributeName="y" values="60;85" dur="0.6s" begin="0.6s" fill="freeze"/>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.6s" fill="freeze"/>
     </text>
   </g>
 
-  <!-- Underline animated bar -->
-  <rect x="60" y="100" width="0" height="3" rx="1.5" fill="url(#g2)">
-    <animate attributeName="width" from="0" to="265" dur="0.8s" begin="0.8s" fill="freeze"/>
+  <!-- Underline animated -->
+  <rect x="85" y="105" width="0" height="3" rx="1.5" fill="url(#g2)">
+    <animate attributeName="width" from="0" to="370" dur="0.8s" begin="0.8s" fill="freeze"/>
   </rect>
 
   <!-- Subtitle -->
-  <text x="200" y="125" text-anchor="middle" fill="#8888aa" font-size="11" opacity="0" letter-spacing="4" class="sub">
-    build . ship . repeat
-    <animate attributeName="opacity" from="0" to="0.7" dur="0.8s" begin="1.5s" fill="freeze"/>
+  <text x="300" y="132" text-anchor="middle" fill="#cc0000" font-size="12" opacity="0" letter-spacing="5" class="sub">
+    BUILD . SHIP . REPEAT
+    <animate attributeName="opacity" from="0" to="0.8" dur="0.8s" begin="1.5s" fill="freeze"/>
   </text>
 
-  <!-- Cursor blink -->
-  <text x="330" y="82" fill="#4d96ff" font-size="36" font-weight="bold" class="futuristic">
+  <!-- Cursor -->
+  <text x="460" y="82" fill="#ff0000" font-size="42" font-weight="bold" class="futuristic">
     _
     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Decorative bottom line -->
-  <line x1="50" y1="140" x2="350" y2="140" stroke="#222244" stroke-width="1"/>
-  <circle cx="50" cy="140" r="2" fill="#ff6b6b">
-    <animate attributeName="cx" values="50;350" dur="3s" repeatCount="indefinite"/>
+  <!-- Decorative line -->
+  <line x1="80" y1="145" x2="520" y2="145" stroke="#330000" stroke-width="1"/>
+  <circle cx="80" cy="145" r="2" fill="#ff0000">
+    <animate attributeName="cx" values="80;520" dur="3s" repeatCount="indefinite"/>
   </circle>
 </svg>
