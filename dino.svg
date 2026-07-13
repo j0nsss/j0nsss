@@ -48,57 +48,61 @@
 
   <!-- Typewriter text -->
   <g filter="url(#glow)">
-    <!-- j -->
     <text x="100" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" class="futuristic">
       j
-      <animate attributeName="opacity" 
-        values="0;0;1;1;1;1;1;1;1;0" 
-        keyTimes="0;0.01;0.05;0.35;0.45;0.55;0.65;0.75;0.85;0.9" 
+      <animate attributeName="opacity"
+        values="0;0;0;1;1;1;1;1;1;1;1;0;0"
+        keyTimes="0;0.02;0.05;0.08;0.20;0.30;0.40;0.50;0.60;0.70;0.85;0.90;1"
         dur="5s" repeatCount="indefinite"/>
     </text>
-    <!-- o -->
     <text x="185" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" class="futuristic">
       o
-      <animate attributeName="opacity" 
-        values="0;0;0;1;1;1;1;1;1;0;0" 
-        keyTimes="0;0.05;0.1;0.15;0.35;0.45;0.55;0.65;0.75;0.85;0.9" 
+      <animate attributeName="opacity"
+        values="0;0;0;0;0;1;1;1;1;1;1;0;0;0"
+        keyTimes="0;0.05;0.10;0.15;0.18;0.20;0.30;0.40;0.50;0.60;0.78;0.82;0.88;1"
         dur="5s" repeatCount="indefinite"/>
     </text>
-    <!-- n -->
     <text x="270" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" class="futuristic">
       n
-      <animate attributeName="opacity" 
-        values="0;0;0;0;1;1;1;1;1;0;0;0" 
-        keyTimes="0;0.1;0.15;0.2;0.25;0.35;0.45;0.55;0.65;0.75;0.8;0.9" 
+      <animate attributeName="opacity"
+        values="0;0;0;0;0;0;0;1;1;1;1;0;0;0;0"
+        keyTimes="0;0.10;0.15;0.20;0.25;0.28;0.30;0.33;0.40;0.50;0.70;0.74;0.80;0.86;1"
         dur="5s" repeatCount="indefinite"/>
     </text>
-    <!-- a -->
     <text x="355" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" class="futuristic">
       a
-      <animate attributeName="opacity" 
-        values="0;0;0;0;0;1;1;1;1;0;0;0;0" 
-        keyTimes="0;0.15;0.2;0.25;0.3;0.35;0.45;0.55;0.65;0.7;0.75;0.8;0.9" 
+      <animate attributeName="opacity"
+        values="0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0"
+        keyTimes="0;0.15;0.20;0.25;0.30;0.35;0.38;0.40;0.43;0.45;0.62;0.66;0.72;0.78;0.84;1"
         dur="5s" repeatCount="indefinite"/>
     </text>
-    <!-- d -->
     <text x="440" y="85" fill="url(#g1)" font-size="56" font-weight="bold" text-anchor="middle" class="futuristic">
       d
-      <animate attributeName="opacity" 
-        values="0;0;0;0;0;0;1;1;1;0;0;0;0;0" 
-        keyTimes="0;0.2;0.25;0.3;0.35;0.4;0.45;0.55;0.65;0.7;0.75;0.8;0.85;0.9" 
+      <animate attributeName="opacity"
+        values="0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0"
+        keyTimes="0;0.20;0.25;0.30;0.35;0.40;0.43;0.45;0.48;0.50;0.53;0.55;0.62;0.65;0.70;0.75;0.80;0.85;1"
         dur="5s" repeatCount="indefinite"/>
     </text>
   </g>
 
-  <!-- Underline (appears after typing, disappears after deleting) -->
+  <!-- Cursor blinks during typing/deleting, off during pause -->
+  <text x="460" y="82" fill="#ff0000" font-size="42" font-weight="bold" class="futuristic">
+    _
+    <animate attributeName="opacity"
+      values="1;0;1;0;1;0;1;0;1;0;1;0;0;0;1;0;1;0;1;0;1;0;0;0"
+      keyTimes="0;0.02;0.04;0.06;0.08;0.10;0.12;0.14;0.16;0.18;0.20;0.22;0.40;0.55;0.57;0.59;0.61;0.63;0.65;0.67;0.69;0.71;0.85;1"
+      dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Underline -->
   <rect x="85" y="105" width="370" height="3" rx="1.5" fill="url(#g2)">
     <animate attributeName="opacity"
-      values="0;0;1;1;1;1;1;0;0"
-      keyTimes="0;0.35;0.4;0.45;0.55;0.65;0.7;0.75;1"
+      values="0;0;1;1;1;1;0;0"
+      keyTimes="0;0.33;0.35;0.55;0.65;0.70;0.72;1"
       dur="5s" repeatCount="indefinite"/>
     <animate attributeName="width"
-      values="0;0;370;370;370;370;370;0;0"
-      keyTimes="0;0.35;0.4;0.45;0.55;0.65;0.7;0.75;1"
+      values="0;0;370;370;370;370;0;0"
+      keyTimes="0;0.33;0.35;0.55;0.65;0.70;0.72;1"
       dur="5s" repeatCount="indefinite"/>
   </rect>
 
@@ -106,17 +110,8 @@
   <text x="300" y="132" text-anchor="middle" fill="#cc0000" font-size="12" letter-spacing="5" class="sub">
     BUILD . SHIP . REPEAT
     <animate attributeName="opacity"
-      values="0;0;0;0.8;0.8;0.8;0;0;0"
-      keyTimes="0;0.25;0.35;0.4;0.55;0.65;0.72;0.8;1"
-      dur="5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Cursor -->
-  <text x="460" y="82" fill="#ff0000" font-size="42" font-weight="bold" class="futuristic">
-    _
-    <animate attributeName="opacity"
-      values="0;0;1;0;1;0;1;0;1;0;0;0"
-      keyTimes="0;0.01;0.02;0.04;0.06;0.08;0.1;0.12;0.14;0.16;0.18;1"
+      values="0;0;0;0.8;0.8;0;0"
+      keyTimes="0;0.30;0.35;0.40;0.62;0.65;1"
       dur="5s" repeatCount="indefinite"/>
   </text>
 
