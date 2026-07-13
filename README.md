@@ -61,12 +61,25 @@ Building things that matter. Passionate about clean code, great UX, and turning 
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=j0nsss&show_icons=true&theme=radical&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=j0nsss&layout=compact&theme=radical&hide_border=true" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=j0nsss&theme=radical&hide_border=true" width="48%" />
+  <svg width="400" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="400" height="140" rx="10" fill="#1e1e2e" stroke="#313244" stroke-width="2"/>
+    <text x="20" y="30" fill="#cdd6f4" font-family="monospace" font-size="14" font-weight="bold">📊 GitHub Stats</text>
+    <rect x="20" y="45" width="360" height="6" rx="3" fill="#313244"/>
+    <rect x="20" y="45" width="320" height="6" rx="3" fill="#89b4fa">
+      <animate attributeName="width" from="0" to="320" dur="1.5s" fill="freeze"/>
+    </rect>
+    <text x="20" y="75" fill="#a6adc8" font-family="monospace" font-size="12">Commits</text>
+    <text x="360" y="75" fill="#cdd6f4" font-family="monospace" font-size="12" text-anchor="end">320</text>
+    <rect x="20" y="85" width="360" height="6" rx="3" fill="#313244"/>
+    <rect x="20" y="85" width="240" height="6" rx="3" fill="#f38ba8">
+      <animate attributeName="width" from="0" to="240" dur="1.5s" fill="freeze"/>
+    </rect>
+    <text x="20" y="115" fill="#a6adc8" font-family="monospace" font-size="12">Repos</text>
+    <text x="360" y="115" fill="#cdd6f4" font-family="monospace" font-size="12" text-anchor="end">24</text>
+    <circle cx="375" cy="15" r="6" fill="#a6e3a1">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
 </p>
 
 ---
