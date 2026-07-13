@@ -59,7 +59,7 @@ Building things that matter. Passionate about clean code, great UX, and turning 
 ---
 
 <p align="center">
-  <img src="jonad.svg" width="400">
+  <img src="jonad.svg" width="450">
 </p>
 
 ---
