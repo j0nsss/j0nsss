@@ -1,144 +1,104 @@
 <svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="160" fill="#f7f7f7"/>
+  <rect width="400" height="160" fill="#0f0f23" rx="8"/>
 
-  <!-- Ground line -->
-  <rect x="0" y="135" width="400" height="2" fill="#535353"/>
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b6b">
+        <animate attributeName="stop-color" values="#ff6b6b;#ffd93d;#6bcb77;#4d96ff;#ff6b6b" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#4d96ff">
+        <animate attributeName="stop-color" values="#4d96ff;#ff6b6b;#ffd93d;#6bcb77;#4d96ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd93d"/>
+      <stop offset="100%" stop-color="#ff6b6b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-  <!-- Ground dots -->
-  <g>
-    <circle cx="50" cy="139" r="1.5" fill="#535353"/>
-    <circle cx="120" cy="138" r="1" fill="#535353"/>
-    <circle cx="180" cy="140" r="1.5" fill="#535353"/>
-    <circle cx="250" cy="137" r="1" fill="#535353"/>
-    <circle cx="320" cy="139" r="1.5" fill="#535353"/>
-    <circle cx="380" cy="138" r="1" fill="#535353"/>
-  </g>
+  <!-- Background particles -->
+  <circle cx="50" cy="30" r="2" fill="#4d96ff" opacity="0.6">
+    <animate attributeName="cy" values="30;140;30" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="50" r="1.5" fill="#ff6b6b" opacity="0.5">
+    <animate attributeName="cy" values="50;140;50" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="20" r="2" fill="#6bcb77" opacity="0.4">
+    <animate attributeName="cy" values="20;140;20" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="60" r="1.5" fill="#ffd93d" opacity="0.5">
+    <animate attributeName="cy" values="60;140;60" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="40" r="1" fill="#4d96ff" opacity="0.3">
+    <animate attributeName="cy" values="40;140;40" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.3;0" dur="3s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Moving ground dots -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" from="400,0" to="-400,0" dur="2.5s" repeatCount="indefinite"/>
-    <circle cx="0" cy="139" r="1.5" fill="#535353"/>
-    <circle cx="60" cy="137" r="1" fill="#535353"/>
-    <circle cx="130" cy="140" r="1.5" fill="#535353"/>
-    <circle cx="200" cy="138" r="1" fill="#535353"/>
-    <circle cx="280" cy="139" r="1.5" fill="#535353"/>
-    <circle cx="350" cy="137" r="1" fill="#535353"/>
-  </g>
-
-  <!-- Dino -->
-  <g>
-    <!-- Running bounce -->
-    <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0;0,-2;0,0" dur="0.25s" repeatCount="indefinite"/>
-
-    <!-- Tail -->
-    <path d="M55,108 L40,103 L38,113 Z" fill="#535353"/>
-    <rect x="50" y="108" width="6" height="14" fill="#535353"/>
-
-    <!-- Body -->
-    <rect x="55" y="98" width="28" height="24" rx="2" fill="#535353"/>
-
-    <!-- Head -->
-    <rect x="78" y="86" width="22" height="18" rx="2" fill="#535353"/>
-    <!-- Jaw -->
-    <rect x="78" y="96" width="16" height="8" fill="#535353"/>
-    <!-- Eye -->
-    <rect x="92" y="90" width="3" height="4" fill="white"/>
-    <circle cx="94" cy="92" r="1.5" fill="#535353"/>
-    <!-- Mouth line -->
-    <rect x="90" y="97" width="6" height="1" fill="white"/>
-
-    <!-- Arm -->
-    <rect x="75" y="110" width="4" height="8" fill="#535353"/>
-
-    <!-- Back leg -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="0,60,122;20,60,122;0,60,122;-20,60,122;0,60,122" dur="0.25s" repeatCount="indefinite"/>
-      <rect x="57" y="119" width="8" height="8" fill="#535353"/>
-      <rect x="55" y="125" width="8" height="4" rx="1" fill="#535353"/>
-    </g>
-
-    <!-- Front leg -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="0,78,122;-20,78,122;0,78,122;20,78,122;0,78,122" dur="0.25s" repeatCount="indefinite"/>
-      <rect x="76" y="119" width="8" height="8" fill="#535353"/>
-      <rect x="76" y="125" width="8" height="4" rx="1" fill="#535353"/>
-    </g>
-  </g>
-
-  <!-- Cactus group 1 - small cactus cluster -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" from="420,0" to="-50,0" dur="2.5s" repeatCount="indefinite"/>
-    <rect x="0" y="113" width="7" height="20" rx="1" fill="#535353"/>
-    <rect x="-4" y="107" width="5" height="8" rx="1" fill="#535353"/>
-    <rect x="6" y="108" width="5" height="7" rx="1" fill="#535353"/>
-  </g>
-
-  <!-- Cactus group 2 - tall single cactus -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" from="550,0" to="-50,0" dur="3.5s" repeatCount="indefinite"/>
-    <rect x="0" y="103" width="7" height="30" rx="1" fill="#535353"/>
-    <rect x="-4" y="103" width="5" height="6" rx="1" fill="#535353"/>
-    <rect x="6" y="104" width="5" height="5" rx="1" fill="#535353"/>
-  </g>
-
-  <!-- Cactus group 3 -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" from="680,0" to="-50,0" dur="4s" repeatCount="indefinite"/>
-    <rect x="0" y="110" width="6" height="23" rx="1" fill="#535353"/>
-  </g>
-
-  <!-- Pterodactyl -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" from="400,0" to="-80,0" dur="5s" repeatCount="indefinite"/>
-    <!-- Body -->
-    <rect x="0" y="70" width="12" height="5" rx="2" fill="#535353"/>
-    <!-- Wing -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="0,8,72;-40,8,72;0,8,72" dur="0.3s" repeatCount="indefinite"/>
-      <path d="M4,72 L-6,58 Z" stroke="#535353" stroke-width="2" stroke-linecap="round"/>
-      <path d="M4,72 L-3,58 Z" stroke="#535353" stroke-width="2" stroke-linecap="round"/>
-    </g>
-    <!-- Beak -->
-    <rect x="-4" y="70" width="5" height="3" fill="#535353"/>
-    <!-- Eye -->
-    <circle cx="3" cy="71" r="1" fill="white"/>
-  </g>
-
-  <!-- Cloud -->
-  <g opacity="0.4">
-    <animateTransform attributeName="transform" type="translate" from="420,0" to="-100,0" dur="7s" repeatCount="indefinite"/>
-    <ellipse cx="30" cy="28" rx="12" ry="8" fill="#d4d4d4"/>
-    <ellipse cx="44" cy="24" rx="16" ry="10" fill="#d4d4d4"/>
-    <ellipse cx="60" cy="28" rx="12" ry="8" fill="#d4d4d4"/>
-  </g>
-
-  <!-- Score -->
-  <g>
-    <text x="380" y="18" fill="#535353" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">
-      00000
+  <!-- Main text "jonad" letter by letter -->
+  <g filter="url(#glow)">
+    <!-- j -->
+    <text x="68" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle">
+      j
+      <animate attributeName="y" values="60;85" dur="0.6s" fill="freeze"/>
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze"/>
     </text>
-    <text x="380" y="18" fill="#535353" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">
-      <animate attributeName="opacity" values="1;1;1;0" dur="5s" repeatCount="indefinite"/>
-      00100
+    <!-- o -->
+    <text x="130" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+      o
+      <animate attributeName="y" values="60;85" dur="0.6s" begin="0.15s" fill="freeze"/>
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.15s" fill="freeze"/>
     </text>
-    <text x="380" y="18" fill="#535353" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">
-      <animate attributeName="opacity" values="1;1;0" dur="3s" repeatCount="indefinite"/>
-      00250
+    <!-- n -->
+    <text x="192" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+      n
+      <animate attributeName="y" values="60;85" dur="0.6s" begin="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.3s" fill="freeze"/>
+    </text>
+    <!-- a -->
+    <text x="254" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+      a
+      <animate attributeName="y" values="60;85" dur="0.6s" begin="0.45s" fill="freeze"/>
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.45s" fill="freeze"/>
+    </text>
+    <!-- d -->
+    <text x="316" y="85" fill="url(#g1)" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle" opacity="0">
+      d
+      <animate attributeName="y" values="60;85" dur="0.6s" begin="0.6s" fill="freeze"/>
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.6s" fill="freeze"/>
     </text>
   </g>
 
-  <!-- HI score -->
-  <text x="310" y="18" fill="#535353" font-family="monospace" font-size="10" text-anchor="end">HI 00099</text>
+  <!-- Underline animated bar -->
+  <rect x="60" y="100" width="0" height="3" rx="1.5" fill="url(#g2)">
+    <animate attributeName="width" from="0" to="265" dur="0.8s" begin="0.8s" fill="freeze"/>
+  </rect>
 
-  <!-- Game Over text -->
-  <g>
-    <animate attributeName="opacity" values="0;0;0;0;1;1" dur="10s" repeatCount="indefinite"/>
-    <text x="200" y="80" text-anchor="middle" fill="#535353" font-family="monospace" font-size="9" font-weight="bold">
-      G A M E  O V E R
-    </text>
-    <!-- Restart hint -->
-    <text x="200" y="95" text-anchor="middle" fill="#535353" font-family="monospace" font-size="7">
-      press space to restart
-    </text>
-  </g>
+  <!-- Subtitle -->
+  <text x="200" y="125" text-anchor="middle" fill="#8888aa" font-family="monospace" font-size="11" opacity="0" letter-spacing="3">
+    build . ship . repeat
+    <animate attributeName="opacity" from="0" to="0.7" dur="0.8s" begin="1.5s" fill="freeze"/>
+  </text>
+
+  <!-- Cursor blink -->
+  <text x="330" y="82" fill="#4d96ff" font-family="monospace" font-size="36" font-weight="bold">
+    _
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Decorative bottom line -->
+  <line x1="50" y1="140" x2="350" y2="140" stroke="#222244" stroke-width="1"/>
+  <circle cx="50" cy="140" r="2" fill="#ff6b6b">
+    <animate attributeName="cx" values="50;350" dur="3s" repeatCount="indefinite"/>
+  </circle>
 </svg>
