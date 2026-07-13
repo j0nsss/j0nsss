@@ -1,8 +1,6 @@
 <svg width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&amp;display=swap');
     .futuristic { font-family: 'Weghorst', 'Impact', 'Arial Black', sans-serif; font-weight: 900; }
-    .sub { font-family: 'Rajdhani', 'Arial', sans-serif; }
   </style>
 
   <defs>
@@ -105,15 +103,6 @@
       keyTimes="0;0.33;0.35;0.55;0.65;0.70;0.72;1"
       dur="5s" repeatCount="indefinite"/>
   </rect>
-
-  <!-- Subtitle -->
-  <text x="300" y="132" text-anchor="middle" fill="#cc0000" font-size="12" letter-spacing="5" class="sub">
-    BUILD . SHIP . REPEAT
-    <animate attributeName="opacity"
-      values="0;0;0;0.8;0.8;0;0"
-      keyTimes="0;0.30;0.35;0.40;0.62;0.65;1"
-      dur="5s" repeatCount="indefinite"/>
-  </text>
 
   <!-- Decorative line -->
   <line x1="80" y1="145" x2="520" y2="145" stroke="#330000" stroke-width="1"/>
